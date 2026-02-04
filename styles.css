@@ -6,7 +6,8 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
+html, body{
+    background-color: #1B263B;
     overflow: hidden;
 }
 
@@ -58,22 +59,6 @@ body {
 .text h1 {
     margin-bottom: 20px;
     width: 40vw;
-}
-
-.click-here {
-    animation: buttonScale 2s infinite ease-in-out;
-}
-
-@keyframes buttonScale {
-    0% {
-        scale: 1;
-    }
-    50% {
-        scale: 1.1;
-    }
-    100% {
-        scale: 1;
-    }
 }
 
 .text h2 {
@@ -196,13 +181,19 @@ ul span {
     font-weight: 700;
     transition: background 0.3s ease;
     box-shadow: 0 10px 17px rgba(0, 0, 0, 0.4);
+    animation: buttonScale 2s infinite ease-in-out;
 }
 
-.cta button {
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
+@keyframes buttonScale {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
 }
 
 .cta button:hover {
